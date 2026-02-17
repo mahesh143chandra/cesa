@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: BronzeProducts
+    description: "Raw product table"
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+
