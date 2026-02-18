@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: default_src
+    database: workspace     # catalog
+    schema: default         # schema
+    tables:
+      - name: categories
+      - name: customer_addresses
+      - name: customers
+      - name: employees
+      - name: inventory
+      - name: payments
+      - name: product_promotions
+      - name: products
+      - name: promotions
+      - name: returns
+      - name: shipments
+      - name: stores
+      - name: suppliers
+      - name: transaction_items
+      - name: transactions

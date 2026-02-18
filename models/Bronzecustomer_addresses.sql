@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
 
-select * from workspace.default.customer_addresses
+select * from {{ source('default_src','customer_addresses')}}
 
 

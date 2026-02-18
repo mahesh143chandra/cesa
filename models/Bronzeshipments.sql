@@ -1,4 +1,6 @@
+
 {{ config(materialized='table') }}
 
 
-select * from workspace.default.shipments
+select * from {{ source('default_src','shipments')}}
+
