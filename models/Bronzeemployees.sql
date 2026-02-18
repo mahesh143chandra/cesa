@@ -1,6 +1,6 @@
 {{ config(materialized='table') }}
 
 
-select * from workspace.default.employees
+select * from {{ source('default_src','employees')}}
 
 

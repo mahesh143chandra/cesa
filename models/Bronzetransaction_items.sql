@@ -1,4 +1,7 @@
+
+
 {{ config(materialized='table') }}
 
 
-select * from workspace.default.transaction_items
+select * from {{ source('default_src','transaction_items')}}
+

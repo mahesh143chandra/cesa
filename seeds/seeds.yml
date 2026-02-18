@@ -1,0 +1,5 @@
+seeds:
+  - name: HRData
+    config: 
+      column_types:
+        customer_name: varchar

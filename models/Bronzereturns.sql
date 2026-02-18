@@ -1,4 +1,7 @@
+
+
 {{ config(materialized='table') }}
 
 
-select * from workspace.default.returns
+select * from {{ source('default_src','returns')}}
+
