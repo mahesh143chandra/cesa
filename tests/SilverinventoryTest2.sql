@@ -1,0 +1,1 @@
+select * from {{ref('Silverinventory')}}  where store_code not in (select store_code from {{ref('Bronzestores')}})
