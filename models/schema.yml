@@ -11,6 +11,29 @@ models:
           - unique
           - not_null
   
+  - name: Bronzecategories
+    description: "Raw product table"
+    columns:
+      - name: category_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+
+  - name: Bronzecustomers
+    description: "Raw cust table"
+    columns:
+      - name: customer_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+      - name: email
+        description: "email column validation"
+        data_tests:
+          - check_mail
+
 
 
 

@@ -1,4 +1,4 @@
-{{ config(materialized='table')}}
+{{ config(materialized='table',schema='stg',pre_hook=["{{set_catalog(var('cat1'))}}"])}}
 
 
 select c.store_code,c.store_name,c.store_type,b.product_name,b.unit_cost from {{ref('Bronzeinventory')}} a
