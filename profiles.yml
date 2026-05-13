@@ -1,0 +1,10 @@
+cesa:
+  target: databricks_cluster
+  outputs:
+    databricks_cluster:
+      type: databricks
+      catalog: workspace
+      schema: cesadev
+      host: "{{ env_var('DBT_HOST') }}"
+      http_path: "{{ env_var('DBT_HTTP_PATH') }}"
+      token: "{{ env_var('DBT_TOKEN') }}"
