@@ -5,6 +5,7 @@ cesa:
       type: databricks
       catalog: workspace
       schema: cesadev
-      host: "{{ env_var('DBT_HOST') }}"
-      http_path: "{{ env_var('DBT_HTTP_PATH') }}"
-      token: "{{ env_var('DBT_TOKEN') }}"
+      host: dbc-d41ae76e-e3c3.cloud.databricks.com
+      http_path: /sql/1.0/warehouses/7ebe4244813e7d05
+      token: dapi55a2d3c88216b70e04e989c125b8d70c
+      threads: 8
