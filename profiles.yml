@@ -7,5 +7,5 @@ cesa:
       schema: cesadev
       host: dbc-d41ae76e-e3c3.cloud.databricks.com
       http_path: /sql/1.0/warehouses/7ebe4244813e7d05
-      token: "{{ env_var('DBT_TOKEN') }}"
+      token: "{{ env_var('DBT') }}"
       threads: 8
