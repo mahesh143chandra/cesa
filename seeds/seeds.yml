@@ -1,5 +1,7 @@
 seeds:
   - name: HRData
-    config: 
+    config:
+      catalog: workspace
+      schema: cesadev
       column_types:
         customer_name: varchar
