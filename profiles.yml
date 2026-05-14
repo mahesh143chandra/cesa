@@ -9,3 +9,4 @@ cesa:
       http_path: /sql/1.0/warehouses/7ebe4244813e7d05
       token: "{{ var('DBT') }}"
       threads: 8
+
