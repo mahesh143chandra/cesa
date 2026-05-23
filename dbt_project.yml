@@ -39,3 +39,11 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    bronze: 
+      +tags: 
+          - "bronze"
+      +materialized: table
+      finance: 
+        +tags: 
+          - "finance"
+        +materialized: table
